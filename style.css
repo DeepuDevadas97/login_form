@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, rgb(61, 143, 252), rgb(43, 89, 150), rgb(153, 33, 143));
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url(../TEST12/Font/Sofia\ Pro\ Regular\ Az.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url(../Font/Avenir-LT-Std-55-Roman_5173.ttf);
+}
+
+.login-container{
+    background-color: white;
+    margin: auto;
+    margin-top: 7%;
+    /* position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 20%); */
+    width: 26%;
+    padding: 45px 4%;
+    border-radius: 3px;
+    box-shadow: 0 3px 12px rgba(3, 3, 48, 0.80);
+    z-index: 10;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.head{
+    color: #111;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.login-form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 0 3px 6px rgb(235, 235, 235);
+    outline: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: Sofia Pro;
+}
+.login-form input::placeholder{
+    color: rgb(189, 189, 189);
+}
+
+.login-btn{
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to right,  rgb(46, 136, 253), rgb(37, 75, 126), rgb(153, 33, 143));
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0 3px 6px rgb(214, 214, 214);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Sofia Pro;
+}
+.login-btn:active{
+    transform: scale(0.97);
+}
+.login-with{
+    font-size: 18px;
+    color: rgb(126, 126, 126);
+    margin-top: 20px;
+}
+
+.login-form a{
+    text-decoration: none;
+}
+.member{
+    font-size: 18px;
+    color: rgb(31, 31, 31);
+    margin-top: 20px;
+}
+
+
+
+
+.social-container{
+    margin-top:  20px;
+    transition: 0.3s ease;
+}
+
+.social-container button{
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 3px;
+    outline: none;
+    background-color: #ffffff;
+    /* padding: 7px 15px; */
+    width: 100px;
+    height: 30px;
+    margin: 0 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgb(214, 214, 214);
+}
+.social-container button span{
+    margin-left: 5px;
+}
+.social-container button:active{
+    transform: scale(0.97);
+}
+
+.fb-btn {
+   color: rgb(20, 62, 248);
+   font-size: 14px;
+   font-weight: bold;
+}
+.google-btn{
+    color: rgb(253, 31, 23);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.signup{
+    font-size: 18px;
+    color: rgb(29, 118, 250);
+}
+.signup:hover{
+    color: rgb(6, 3, 204);
+}
+
+
+
+@media(max-width: 768px){
+    .login-container{
+        background-color: white;
+        margin-top: 25%;
+        /* position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 20%); */
+        width: 80%;
+        padding: 30px 4%;
+        border-radius: 3px;
+        box-shadow: 0 3px 12px rgba(3, 3, 48, 0.80);
+        z-index: 10;
+    }
+}
+
+@media(min-width: 1520px){
+    .login-container{
+        margin-top: 15%;
+        width: 24%;
+        padding: 60px 3%;
+    }
+}
